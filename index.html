@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+
+<main>
+  <h1>Text Length</h1>
+
+  <h2>Input</h2>
+  <textarea id="input"></textarea>
+  <button onclick="run()">Length</button>
+  
+  <h2>Output</h2>
+  <p id="output"></p>
+</main>
+
+<script>
+  const run = () => {
+    const input = document.getElementById('input')
+    const output = document.getElementById('output')
+    
+    output.innerText = input.value.length
+  }
+</script>
